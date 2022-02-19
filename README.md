@@ -2,7 +2,7 @@
 Example for an ROS2 publisher for publishing a corrected CameraInfo.msg for right camera in a CARLA stereo vision setup
 
 ## What
-Running CARLA Simulator with CARLA-ROS-BRIDGE you can attach any number of RGB cmara sensors to your agent, 
+Running CARLA Simulator with CARLA-ROS-BRIDGE you can attach any number of RGB camera sensors to your agent, 
 but their respective CameraInfo.msg topic is always assuming a mono vision setup.
 
 This publisher is an example on how to overwrite the projection matrix for the right camera of a stereo vision setup, used in stereo odometry.
