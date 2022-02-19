@@ -1,6 +1,9 @@
 # CARLA_ROS2_StereoCam_Synchronizer
 Example for an ROS2 publisher for publishing a corrected CameraInfo.msg for right camera in a CARLA stereo vision setup
 
+## status
+code is working but I have not made a clean export for you to use the module out of the box yet. So you might have to build your own package and copy the code. But since this example might help with the initial confusion when setting up a stereo system on carla I leave it here anyways. 
+
 ## What
 Running CARLA Simulator with CARLA-ROS-BRIDGE you can attach any number of RGB camera sensors to your agent, 
 but their respective CameraInfo.msg topic is always assuming a mono vision setup.
