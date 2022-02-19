@@ -5,6 +5,7 @@ Example for an ROS2 publisher for publishing a corrected CameraInfo.msg for righ
 code is working but I have not made a clean export for you to use the module out of the box yet. So you might have to build your own package and copy the code. But since this example might help with the initial confusion when setting up a stereo system on carla I leave it here anyways. 
 
 ## What
+### Stereo Synchronizer 2
 Running CARLA Simulator with CARLA-ROS-BRIDGE you can attach any number of RGB camera sensors to your agent, 
 but their respective CameraInfo.msg topic is always assuming a mono vision setup.
 
@@ -42,6 +43,7 @@ float64[12] p # 3x4 row-major matrix
 
 Note: Since we are using the simulated CARLA sensors we do not have to deal with distortion, therefor no camera calibration is needed either. 
 So you will find P = K|t in this case, since tx = tx' ty=ty' cx=cx' cy=cy'
+
 
 ## build
 I recommend following the build instruction for new packages from the official ros2 docs https://docs.ros.org/en/foxy/Tutorials/Creating-Your-First-ROS2-Package.html
