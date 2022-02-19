@@ -6,8 +6,10 @@ Running CARLA Simulator with CARLA-ROS-BRIDGE you can attach any number of RGB c
 but their respective CameraInfo.msg topic is always assuming a mono vision setup.
 
 This publisher is an example on how to overwrite the projection matrix for the right camera of a stereo vision setup, used in stereo odometry.
-The according math and explanations can be reviewd in the CameraInfo.msg documentation at:
+The according math and explanations can be reviewed in the CameraInfo.msg documentation at:
 https://github.com/ros2/common_interfaces/blob/master/sensor_msgs/msg/CameraInfo.msg 
+
+https://github.com/ros2/common_interfaces/blob/fa1d0093db5df80c886093f27810d09c46f5111e/sensor_msgs/msg/CameraInfo.msg
 
 ## build
 I recommend following the build instruction for new packages from the official ros2 docs https://docs.ros.org/en/foxy/Tutorials/Creating-Your-First-ROS2-Package.html
